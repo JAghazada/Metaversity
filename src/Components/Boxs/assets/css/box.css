@@ -1,0 +1,35 @@
+:root{
+    --grayishBlue:hsl(229,6%,6%)
+
+}
+.boxContainer{
+    width: 20%;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background-color: #fff;
+    position: relative;
+    padding: 15px ;
+}
+.boxContainer > .header {
+    font-weight: bold;
+    font-size: 28px;
+    color: #000048;
+    text-align: center;
+    padding-top: 2%;
+
+
+}
+.boxContainer>.text{
+    color: #300003;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2%;
+}
+.boxContainer > .icon {
+    font-size: 30px;
+    float: right;
+    position: absolute;
+    bottom: 15px;
+
+    right: 15px;
+}

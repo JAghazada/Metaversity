@@ -1,0 +1,33 @@
+:root{
+    --grayishBlue:hsl(229,6%,6%)
+
+}
+#cardBox {
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+#cardBox img{
+    width: 100%;
+
+}
+
+#cardBox >#cardBoxText > .header{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 22px;
+    color: #000048;
+}
+#cardBox >#cardBoxText {
+    padding: 5px 10px;
+}
+#cardBox >#cardBoxText > .text{
+    padding: 10px;
+    font-size: 18px;
+    color: #000;
+}
+#cardBox img {
+    height: 200px;
+}

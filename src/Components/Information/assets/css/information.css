@@ -1,0 +1,9 @@
+.information-wrapper{
+    height: 500px;
+    background-image: linear-gradient(315deg, #000048 0%, #875151 50%);
+}
+.information-wrapper>p>h1 {
+    font-weight: bold;
+    padding-bottom: 3%;
+    color: '#FFF' !important;
+}

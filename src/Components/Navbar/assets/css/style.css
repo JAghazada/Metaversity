@@ -1,0 +1,126 @@
+#mainNav{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 0 !important;
+  }
+  #mainNav li  {
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000048;
+  
+  }
+  #mainNav li:hover {
+    color: rgb(99, 17, 93);
+  }
+  #mainNav a {
+    text-decoration: none;
+  
+  }
+  
+  nav#mainNav {
+    height: 10vh;
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+  }
+  #mainNav .nav-logo{
+    position: absolute;
+    left: 2%;
+    z-index: 2;
+  }
+  #mainNav ul.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-right: 4% !important;
+    margin-bottom: 0 !important;
+    font-weight: bold;
+  }
+  #mainNav ul.nav-links a{
+   
+    font-size: 20px;
+    color: #2015ff;
+  }  
+  #mainNav .nav-burger{
+    display: none;
+  }
+  
+  #mainNav .nav-burger .line-o,#mainNav .nav-burger .line-t,#mainNav .nav-burger .line-th {
+    width: 24px;
+    height: 3px;
+    background-color: #2015ff;
+    cursor: pointer;
+    transition: 0.3s ease;
+  
+  }
+  
+  #mainNav .nav-burger .line-t{
+    margin: 3px 0;
+  
+  }
+  @media screen and (min-width :768px  ) and ( max-width:1278px){
+    #mainNav ul {
+        width: 90% ;
+    }
+    
+  }
+  @media only screen  and (max-width:1364px){
+    #mainNav .nav-burger{
+      display: block;
+    }
+    #mainNav ul {
+      position: fixed;
+      top: 14vh;
+      right: 0;
+      width: 60%;
+      height: 92vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffff;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(150%);
+      transition: .5 ease;
+    }
+    #mainNav ul.nav-links li {
+      opacity: 0;
+    }
+  
+  }
+  .nav-active{
+    transform: translateX(0);
+    animation:linksFade .2s ease forwards;
+  
+  }
+  .nav-close.line-o{
+    transform: rotate(-45deg) translate(-5px,3px);
+    transition: 0.3s ease;
+  }
+  .nav-close.line-t{
+    opacity: 0;
+  } 
+  .nav-close.line-th{
+  
+    transform: rotate(135deg) translate(-5px,-3px);
+    transition: 0.3s ease;
+  
+  }
+  @keyframes linksFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+  }
+  

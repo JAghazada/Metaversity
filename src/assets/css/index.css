@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Helvetica;
+    src: local("HelveticaNeue"),local("Helvetica Neue"),local("Helvetica-Neue") ,url("../fonts/Helvetica/Helvetica/HelveticaNeue-Black.otf"),format(truetype);
+
+}
+*{
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #edeff2;
+}

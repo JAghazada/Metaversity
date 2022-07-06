@@ -1,0 +1,41 @@
+footer {
+    width: 100%;
+    height: 250px;
+    margin-top: 5%;
+   position: relative;
+   background-color: transparent;
+   font-weight: bold;
+
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.section-lists >li{
+    font-size: 16px;
+    padding: 5px;
+    color: #000;
+    cursor: pointer;
+    list-style: none ;
+}
+.fa-brands {
+    padding-left: 5px;
+    font-size: 17px;
+}
+.fa-instagram{
+    color: #125688;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-youtube {
+    color: #FF0000;
+}
+.fa-linkedin {
+    color: #0072b1;
+}

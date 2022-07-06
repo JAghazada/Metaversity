@@ -1,0 +1,79 @@
+.card{
+    height: 50vh;
+    width: 500px;
+    z-index: 0;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 44px;
+    cursor: pointer;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    background-color: transparent;
+    border: none;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    align-items: center;
+    transform-style: preserve-3d;
+
+}
+.card .face.front {
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    background-color: #eec0c6;
+    background:  linear-gradient( #eec0c6ac , #7ee7faaf ),url(../img/sideImg.jpg) !important;
+    
+
+    transition: all .9s ease-out; 
+}
+.d-flex {
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+
+}
+.btn-back {
+    padding: 10px 25px;
+    outline: none;
+    color: magenta;
+    background-color: #fff;
+    border: 1px magenta solid ;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 3%;
+}
+.card .face.front >div> h2,.card .face.back >div> h2 {
+    color: #fff;
+    text-align: center;
+}
+.card .face.front >div >h3,.card .face.back >div >h3 {
+    color: #fafafa;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 14px;
+}
+.card .face.back {
+    background-color: #29c9ed;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-image: url(../img/sideImg.jpg);
+
+    transition: all .9s ease-out; 
+}
+
+.card:hover > .face.front{
+    transform: rotateY(-180deg);
+}
+.card:hover > .face.back{
+    transform: rotateY(0deg);
+}

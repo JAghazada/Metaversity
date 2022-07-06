@@ -1,0 +1,31 @@
+.subscribe-wrapper {
+    background-image: linear-gradient(315deg, rgb(127, 90, 131) 0%, rgb(13, 50, 77) 74%);
+    height: 110px;
+    width: 70%;
+    margin: 2% auto;
+    border-radius: 8px;
+}
+.subscribe-wrapper > p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+.subscribe-wrapper > button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+
+    background:#05e8d570;
+    color: #fff;
+}
+.subscribe-wrapper>button:hover {
+    -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+    transition: .3s ease-in-out;
+}

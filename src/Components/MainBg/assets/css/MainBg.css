@@ -1,0 +1,70 @@
+#MainBgContainer {
+    width: 100%;
+    background-image: linear-gradient(315deg, #000048 0%, #fafafa 50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#bgText{
+    color: #000;
+    font-size: 54px;
+}
+#bgSubText{
+    color: #0B0B0B;
+    font-size: 18px;
+    margin-top: 2%;
+}
+#Texts {
+    width: 40%;
+}
+#MainBgImg{
+    width: 40%;
+}
+#bgBtns{
+    display: flex;
+    align-items: center;
+}
+#bgBtns p {
+    margin-bottom: 0rem !important;
+
+}
+.btn-bg-n-t{
+    color: #000048;
+    margin-top:2%;
+    padding-left: 10px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.btn-bg{
+    margin-top: 4%;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    background:#000048 ;
+    outline: none;
+    border: none;
+
+}
+.btn-bg :hover{
+    color: #000048;
+    background: #fff;
+}
+@media only screen and (max-width:1184px){
+    #MainBgContainer {
+        display: block;
+    }
+    #Texts {
+        width: 100%;
+    }
+    #MainBgImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
